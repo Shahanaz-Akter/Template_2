@@ -44,7 +44,7 @@
         /* Bootstrap 4 text input with search icon */
 
         .has-search .form-control {
-            padding-left: 2.375rem;
+            padding-left: 5.375rem;
         }
 
         .has-search .form-control-feedback {
@@ -56,10 +56,13 @@
             line-height: 2.375rem;
             text-align: center;
             pointer-events: none;
-            color: #0d6efd;
+            color: black;
         }
 
-
+        .custom-shadow {
+            box-shadow: 2px 2px 15px black;
+            /* Customize color and opacity here */
+        }
 
         @media (max-width: 576px) {}
 
@@ -67,40 +70,58 @@
     </style>
 </head>
 
-<body>
+<body style="">
 
     <!-- Website contain   er Main  section -->
-    <section class="" style="background-color:rgba(249, 255,248);">
+    <section class="container-fluid" style="background-color:rgba(249, 255,248);overflow-y:auto;">
 
         <!-- Header Section -->
-        <section class="" style="margin-bottom: 125px!important; border: 2px solid  red">
-            <nav class="fixed-top p-4" style="background-color:rgba(249, 255,248);border: 1px solid  rgba(249, 255,248);">
+        <section class="" style="margin-bottom: 140px!important;">
+            <nav class="fixed-top custom-shadow" style="background-color:rgba(249, 255,248);">
+                <div class="row mt-1">
+                    <div class="col-4 col-lg-4 col-md-4 col-xl-4"></div>
+                    <div class="col-4 col-lg-4 col-md-4 col-xl-4 text-center fs-5 fw-bold" style="color: #31562F">Logo</div>
+                    <div class="col-4 col-lg-4 col-md-4 col-xl-4 fs-5 fw-bold" style="color: #31562F">
+                        <span class="border border-1 ps-4 pe-4">ENG</span>
+                        <span class="border border-1 ps-4 pe-4"> <a class="" href="#"></a><i class="fas fa-globe" style="font-size: 20px; color: #31562F"></i></a></span>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-lg-center align-items-xl-center align-items-sm-start align-items-md-center 
+                 gap-lg-5 gap-md-3 flex-column flex-sm-column flex-md-row flex-lg-row flex-xl-row p-4 text-capitalize fw-medium" style="border: 2px solid transparent;">
 
-                <div class="d-flex justify-content-center align-content-center gap-lg-5 flex-column gap-md-2 flex-sm-column flex-md-row flex-lg-row flex-xl-row">
-
-                    <form class="mb-3 mt-sm-4 mb-lg-4 mb-md-3 mb-3 mb-sm-4 form-group has-search" role="search">
+                    <form class="mb-2 mb-xl-0 mb-lg-0 form-group has-search" role="search">
                         <span class="fa fa-search form-control-feedback" style="font-size: 10px !important;"></span>
-                        <input type="text" class="form-control control_form" placeholder="Search">
+                        <input type="text" class="form-control w-100 text-end" placeholder="Search">
                         <!-- <input class="form-control me-0 margin_top" type="search" placeholder="Search" aria-label="Search" style="border-radius: 2px; border: 2px solid transparent" /> -->
                     </form>
 
-                    <div class="mt-lg-4 mt-md-4 mb-3 mt-sm-4 mb-lg-4 mb-md-3 mb-3 mb-sm-4"> <a class="text-black" href="#" style="text-decoration: none;"></a>Exclusive </a></div>
-                    <div class="mt-lg-4 mt-md-4 mb-3 mt-sm-4 mb-lg-4 mb-md-3 mb-3 mb-sm-4"> <a class="text-black" href="#"></a>New Arrivals </a></div>
-                    <div class="mt-lg-4 mt-md-4 mb-3 mt-sm-4 mb-lg-4 mb-md-3 mb-3 mb-sm-4"> <a class="text-black" href="#"></a>Wooden </a></div>
-                    <div class="mt-lg-4 mt-md-4 mb-3 mt-sm-4 mb-lg-4 mb-md-3 mb-3 mb-sm-4"> <a class="text-black" href="#"></a>Showcase </a></div>
-                    <div class="mt-lg-4 mt-md-4 mb-3 mt-sm-4 mb-lg-4 mb-md-3 mb-3 mb-sm-4"> <a class="text-black" href="#"></a>Accessories </a></div>
+                    <div class="mb-2 mb-xl-0 mb-lg-0"> <a class="text-black" href="#"></a>Exclusive </a></div>
+                    <div class="mb-2 mb-xl-0 mb-lg-0"> <a class=" text-black" href="#"></a>New<span style="visibility: hidden;;">_</span>Arrivals </a></div>
+                    <div class="mb-2 mb-xl-0 mb-lg-0"> <a class="text-black" href="#"></a>Wooden </a></div>
+                    <div class="mb-2 mb-xl-0 mb-lg-0"> <a class="text-black" href="#"></a>Showcase </a></div>
+                    <div class="mb-2 mb-xl-0 mb-lg-0"> <a class="text-black" href="#"></a>Accessories </a></div>
 
+                    <div class="d-flex gap-3">
+
+                        <div class="mb-2 mb-xl-0 mb-lg-0"> <a class="text-black" href="#"></a><i class="fas fa-shopping-cart text-primary" style="font-size: 20px;"></i></a></div>
+                        <div class="mb-2 mb-xl-0 mb-lg-0"> <a class="text-black" href="#"></a> <i class="fas fa-heart text-danger" style="font-size: 20px;"></i></a></div>
+                        <div class="mb-2 mb-xl-0 mb-lg-0"> <a class="text-black" href="#"></a><i class="fas fa-user text-black" style="font-size: 20px;"></i></a></div>
+                    </div>
                 </div>
 
             </nav>
+
         </section>
 
 
-        <section class="mt-5">
-            <div>
+
+        <!-- Body Section -->
+
+
+        <section class="mb-5">
+            <div class="" style="text-align: justify; ">
                 Mimi Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat illo commodi nam excepturi atque voluptas quos impedit, sint asperiores dolore ducimus. Nihil, quidem voluptates! Quis, culpa. Reiciendis, vitae voluptas. Expedita autem dolor libero eaque porro dolores quaerat
-                atque
-                voluptas ipsum adipisci, nam provident odit! Ipsum debitis, distinctio at alias rem, culpa non libero ducimus quos, architecto repellendus velit iusto laudantium dolorum id nihil nam animi fugit explicabo tempora sunt dolore soluta! Quos nesciunt ex tempore, doloremque odit
+                atque voluptas ipsum adipisci, nam provident odit! Ipsum debitis, distinctio at alias rem, culpa non libero ducimus quos, architecto repellendus velit iusto laudantium dolorum id nihil nam animi fugit explicabo tempora sunt dolore soluta! Quos nesciunt ex tempore, doloremque odit
                 accusantium ipsam suscipit esse ducimus officiis corporis vero similique deserunt hic sed dignissimos expedita labore voluptatem illum. Ea quisquam veniam fugit eum. Laudantium repellat porro ipsum facilis consequatur commodi soluta vero totam quibusdam explicabo eligendi ab
                 doloremque odio dolore, fugit ullam non minima nam nisi omnis, quasi accusantium saepe veniam perferendis. Esse repellat saepe, dignissimos vitae labore cumque unde sint similique, consequatur officiis ab, dicta debitis enim quisquam quae veritatis totam recusandae voluptas hic
                 assumenda exercitationem reiciendis harum qui aliquid. Recusandae, in ab cum cumque maiores obcaecati vitae error adipisci distinctio minus! Voluptatibus, consequatur totam. Totam delectus sit officia, repellendus ipsa unde corrupti soluta, accusantium blanditiis quaerat aspernatur
@@ -174,8 +195,23 @@
             </div>
         </section>
 
-        <!-- Body Section -->
-        <section></section>
+        <section class="mb-5">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-center align-items-center bg-warning">
+                    <div>
+                        <div>
+                            <span class="fw-bold" style="font-size: 40px; color: #2F562F;">Best</span> <span style="font-size: 30px;">Interior</span>
+                        </div>
+                        <div class="p-1 text-center" style="font-size: 30px; color: #2F562F; background-color: rgb(180, 191, 93);">Collection</div>
+                        <span style="font-size: 30px; color: #2F562F;">for</span>
+                        <span class="fw-bold" style="font-size: 40px; color: #2F562F;">You</span>
+
+
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-center align-items-center bg-primary">Two</div>
+            </div>
+        </section>
 
         <!-- Footer Section -->
         <section>
