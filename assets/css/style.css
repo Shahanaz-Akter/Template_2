@@ -44,6 +44,24 @@
  /* search  box css end*/
 
 
+
+ @media (min-width: 992px) {
+     .bestTxt {
+         font-size: 60px !important;
+     }
+
+     .collectionTxt {
+         font-size: 50px !important;
+     }
+
+     .ttt {
+         top: 20% !important;
+         left: 17% !important;
+     }
+
+ }
+
+
  @media (max-width: 769px) {
      .bestTxt {
          font-size: 30px !important;
