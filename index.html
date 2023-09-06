@@ -17,17 +17,53 @@
 
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
-
     <!-- internal css -->
     <style>
+        /* layout-3 style */
+        .radius_tl {
+            border-radius: 110px 0px 0px 0px;
+        }
 
+        .radius_br {
+            border-radius: 0px 0px 100px 0px;
+            padding-right: 0px !important;
+        }
+
+
+        @media (max-width:576px) {
+            .radius_tl {
+                border-radius: 0px 0px 0px 0px;
+                margin-bottom: 10px;
+            }
+
+            .radius_br {
+                border-radius: 0px 0px 0px 0px;
+            }
+
+            .left-padd {
+                padding-left: 0px !important;
+            }
+
+            .first_child {
+                order: 2;
+            }
+
+            .second_child {
+                order: 1;
+            }
+
+            .hh {
+                width: 300px !important;
+            }
+
+        }
     </style>
 </head>
 
 <body style="">
 
     <!-- Website container section -->
-    <section class="container-fluid" style="background-color:rgba(249, 255,248);overflow-y:auto;">
+    <section class="container-fluid m-auto" style="background-color:rgba(249, 255,248);overflow-y:auto;">
 
         <!-- Header Section -->
         <section class="header" style="margin-bottom: 140px">
@@ -101,8 +137,6 @@
                 <div class="col-12 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-center align-items-center" style="border: 2px solid transparent;">
                     <div style="color: #31562F;">
                         <div class="p-5">
-
-
                             <h1 class="text-start fw-bold">Crafted with
                                 <br>
                                 Excellent
@@ -113,7 +147,6 @@
                                 vero saepe officiis temporibus ducimus aut distinctio, harum quo nesciunt.
                                 <br> <br>
                                 ducimus sit itaque esse animi omnis porro, id necessitatibus iure eveniet vitae. Et quia sapiente cum modi, iure quae, est sequi quam,
-
                             </p>
                         </div>
                     </div>
@@ -125,13 +158,52 @@
                         <div class="swiper swiper-slider">
                             <div class="swiper-wrapper">
 
-                                <!-- <img class="swiper-slide" src="assets/img/furniture-05.png" alt="Swiper"> -->
-                                <img class="swiper-slide" src="https://source.unsplash.com/1920x1280/?people" alt="Swiper">
-                                <img class="swiper-slide" src="https://source.unsplash.com/1920x1280/?flower" alt="Swiper">
-                                <img class="swiper-slide" src="https://source.unsplash.com/1920x1280/?travel" alt="Swiper">
-                                <img class="swiper-slide" src="https://source.unsplash.com/1920x1280/?fruits" alt="Swiper">
+                                <!-- <img class="swiper-slide" src="assets/img/furniture-05.png" alt="Image is not Available"> -->
+                                <div class="swiper-slide">
+                                    <img class="img-thumbnail" src="https://source.unsplash.com/1920x1280/?people" alt="Image is not Available">
+                                    <div class="text-center mt-3">
+                                        <div class="mb-2">
+                                            Dressing Table <br>
+                                            BDT 6789/=
+                                        </div>
+                                        <a href=""> <button class="btn btn-outline-success btn-sm">View details</button></a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img class="img-thumbnail" src="https://source.unsplash.com/1920x1280/?flower" alt="Image is not Available">
+                                    <div class="text-center mt-3">
+                                        <div class="mb-2">
+                                            Furniture <br>
+                                            BDT 6789/=
+                                        </div>
+                                        <a href=""> <button class="btn btn-outline-success btn-sm">View details</button></a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img class="img-thumbnail" src="https://source.unsplash.com/1920x1280/?travel" alt="Image is not Available">
+                                    <div class="text-center mt-3">
+                                        <div class="mb-2">
+                                            Sofa-set <br>
+                                            BDT 6789/=
+                                        </div>
+                                        <a href=""> <button class="btn btn-outline-success btn-sm">View details</button></a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img class="img-thumbnail" src="https://source.unsplash.com/1920x1280/?fruits" alt="Image is not Available">
+                                    <div class="text-center mt-3">
+                                        <div class="mb-2">
+                                            Almirah<br>
+                                            BDT 6789/=
+                                        </div>
+                                        <a href=""> <button class="btn btn-outline-success btn-sm">View details</button></a>
+                                    </div>
+                                </div>
                             </div>
-                            <span class="swiper-pagination"></span>
+                            <!-- <span class="swiper-pagination"></span> -->
                             <span class="swiper-button-prev"></span>
                             <span class="swiper-button-next"></span>
                         </div>
@@ -143,15 +215,72 @@
         </section>
 
         <!-- layout-3 -->
+        <!-- max-width: 1000px!important; max-height: 300px!important -->
+
+        <section class="mb-5" style="border: 2px solid transparent;">
+            <div class="m-auto" style="color:#31562F; max-width: 1860px!important;">
+                <div class="left-padd" style="padding-left: 100px;">
+                    <h4 class="">This Week
+                        <b>Featured</b>
+                        <br>
+                        Product
+                    </h4>
+                </div>
+
+                <div class="row radius_tl" style="color: white; background-color: #31562F;">
+
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-6 col-sm-6 d-flex justify-content-center align-items-center">
+                        <div class="ps-0 ps-md-3 ps-sm-2 ps-lg-4 ps-xl-5">
+                            <h4>Lorem Ipsum</h4>
+                            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. dolorum sed vel adipisci incidunt nobis tempore? Sequi quos vel
+                                aliquam
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-6 col-sm-6 d-flex justify-content-center justify-content-sm-end  justify-content-lg-end justify-content-xl-end align-items-center">
+
+                        <div class="hh" style="height: auto; ">
+                            <img src="assets/img/furniture-11.png" alt="" style="width: 100%;">
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
         <!-- layout-4 -->
+        <section class="mb-5" style="border: 2px solid transparent;">
 
+            <div class="m-auto" style="color:#31562F; max-width: 1860px!important;">
 
+                <div class="row radius_br" style="color: white; background-color: #31562F;">
+                    <div class="first_child col-12 col-md-6 col-lg-6 col-xl-6 col-sm-6 d-flex justify-content-center justify-content-sm-start  justify-content-lg-start justify-content-xl-start align-items-center">
+                        <div class="hh" style="height: auto;">
+                            <img src="assets/img/furniture-24.png" alt="" style="width: 100%;">
+                        </div>
+                    </div>
+
+                    <div class="second_child col-12 col-md-6 col-lg-6 col-xl-6 col-sm-6 d-flex justify-content-center align-items-center">
+                        <div class="pe-0 pe-md-3 pe-sm-2 pe-lg-4 pe-xl-5">
+                            <h4>Lorem Ipsum</h4>
+                            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. dolorum sed vel adipisci incidunt nobis tempore? Sequi quos vel
+                                aliquam
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
         <!-- layout-5 -->
-        <section class="mb-5" style="border: 2px solid green">
+        <section class="mb-5" style="border: 2px solid transparent">
             <div class="row">
 
                 <div class="col-12 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-center align-items-center" style="border: 2px solid transparent;">
-                    <div>
+                    <div class="p-5" style="text-align: justify;">
                         <div class="" style="color: #31562F; background: transparent;">
                             <h1>Why Choose US</h1>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -164,23 +293,23 @@
                             <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                                 <h1>Lorem Ipsem</h1>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Soluta quibusdam reiciendis earum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, consectetur. </p>
+                                    Soluta quibusdam reiciendis earum. Lorem ipsum dolor sit, </p>
                             </div>
 
                             <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                                 <h1>Lorem Ipsem</h1>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Soluta quibusdam reiciendis earum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, consectetur. </p>
+                                    Soluta quibusdam reiciendis earum consectetur. </p>
                             </div>
                             <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                                 <h1>Lorem Ipsem</h1>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Soluta quibusdam reiciendis earum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, consectetur. </p>
+                                    Soluta quibusdam reiciendis earum consectetur. </p>
                             </div>
                             <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                                 <h1>Lorem Ipsem</h1>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Soluta quibusdam reiciendis earum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, consectetur. </p>
+                                    Soluta quibusdam reiciendis earum consectetur. </p>
                             </div>
 
                         </div>
@@ -192,6 +321,7 @@
                         <img src="assets/img/almirah.png" alt="" style="max-width: 500px; height:auto;">
                     </div>
                 </div>
+            </div>
         </section>
         <!-- layout-6 -->
         <section class="mb-5" style="border: 2px solid blue">
@@ -203,11 +333,11 @@
                             <div class="swiper swiper-slider">
                                 <div class="swiper-wrapper">
 
-                                    <!-- <img class="swiper-slide" src="assets/img/furniture-05.png" alt="Swiper"> -->
-                                    <img class="swiper-slide rounded-circle" src="https://source.unsplash.com/1920x1280/?people" alt="Swiper">
-                                    <img class="swiper-slide rounded-circle" src="https://source.unsplash.com/1920x1280/?flower" alt="Swiper">
-                                    <img class="swiper-slide rounded-circle" src="https://source.unsplash.com/1920x1280/?travel" alt="Swiper">
-                                    <img class="swiper-slide rounded-circle" src="https://source.unsplash.com/1920x1280/?fruits" alt="Swiper">
+                                    <!-- <img class="swiper-slide" src="assets/img/furniture-05.png" alt="Image is not Available"> -->
+                                    <img class="swiper-slide rounded-circle" src="https://source.unsplash.com/1920x1280/?people" alt="Image is not Available">
+                                    <img class="swiper-slide rounded-circle" src="https://source.unsplash.com/1920x1280/?flower" alt="Image is not Available">
+                                    <img class="swiper-slide rounded-circle" src="https://source.unsplash.com/1920x1280/?travel" alt="Image is not Available">
+                                    <img class="swiper-slide rounded-circle" src="https://source.unsplash.com/1920x1280/?fruits" alt="Image is not Available">
                                 </div>
                                 <span class="swiper-pagination"></span>
                                 <span class="swiper-button-prev"></span>
@@ -396,7 +526,7 @@
 
             // Enabled autoplay mode
             autoplay: {
-                delay: 2000,
+                delay: 4000,
                 disableOnInteraction: false
             },
 
