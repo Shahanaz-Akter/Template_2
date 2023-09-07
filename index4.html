@@ -39,12 +39,12 @@
         align-items: center;
         justify-content: center;
         transition: all 200ms linear;
-        transform: scale(0.1);
+        transform: scale(0.7) !important;
     }
 
     .swiper-slide.swiper-slide-active {
         /* border-radius: 50%; */
-        transform: scale(1);
+        transform: scale(1.5) !important;
         background: #fc0;
     }
 
@@ -73,6 +73,10 @@
             </div>
             <div class="swiper-slide">Slide 5
             </div>
+            <div class="swiper-slide">Slide 6
+            </div>
+            <div class="swiper-slide">Slide 7
+            </div>
         </div>
         <!-- If we need navigation buttons -->
         <div class="swiper-button-prev"></div>
@@ -99,7 +103,7 @@
 
             var mySwiper = new Swiper(".swiper-container", {
                 spaceBetween: 1,
-                slidesPerView: 3,
+                slidesPerView: 5,
                 centeredSlides: true,
                 roundLengths: true,
                 loop: true,
