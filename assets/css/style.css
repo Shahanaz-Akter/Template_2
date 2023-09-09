@@ -233,3 +233,38 @@ img {
     }
 
 }
+
+/* designn classes animation */
+
+
+.designn1 {
+    animation: animate1 4s linear infinite;
+
+}
+
+.designn2 {
+    animation: animate2 4s linear infinite;
+
+}
+
+@keyframes animate1 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+
+    }
+}
