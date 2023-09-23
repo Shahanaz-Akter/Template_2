@@ -214,11 +214,11 @@ button {
 
 /* layout-3 style */
 .radius_tl {
-    border-radius: 110px 0px 0px 0px;
+    border-radius: 120px 0px 0px 0px;
 }
 
 .radius_br {
-    border-radius: 0px 0px 100px 0px;
+    border-radius: 0px 0px 120px 0px;
     padding-right: 0px !important;
 }
 
@@ -414,4 +414,148 @@ button {
 .designn6 {
     animation: animate5 4s linear infinite;
 
+}
+
+
+/* swiper conatiner1 style */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+.content {
+    display: grid;
+    place-items: center;
+    position: relative;
+    /* height: 50vh; */
+    /* background-color: white; */
+
+}
+
+.swiper-container1 {
+    border-radius: 5px;
+    max-width: 600px;
+    overflow: hidden;
+    height: fit-content;
+    height: fit-content;
+    font-size: 50px;
+    position: relative;
+    padding-bottom: 10px;
+    font-family: sans-serif;
+}
+
+.swiper-container1 .swiper-slide {
+    width: auto;
+    height: fit-content;
+    display: flex;
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0px;
+    font-family: Nunito;
+    background-color: white;
+
+}
+
+.swiper-container1 .swiper-slide .ImgHolder {
+    /* background-color: #31562F; */
+
+    background-color: #31562F;
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    border-bottom-left-radius: 20px;
+
+}
+
+.swiper-container1 .ContentHolder::before {
+    background-color: #31562F;
+    content: '';
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -5px;
+    z-index: -1;
+    right: 0px;
+}
+
+.swiper-container1 .ContentHolder {
+    position: relative;
+    padding: 10px;
+    background-color: white;
+    border-top-right-radius: 50px;
+}
+
+.swiper-container1 .swiper-pagination-bullet {
+    background-color: white;
+    opacity: 1;
+    border: 1px solid #31562F;
+}
+
+.swiper-container1 .swiper-pagination-bullet-active {
+    background-color: #31562F;
+}
+
+.swiper-container1.swiper-button {
+    border: 1px solid white;
+}
+
+.swiper-container1 .swiper-slide img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+    object-fit: cover;
+    border: 3px solid #31562F;
+    outline: 2px solid white;
+}
+
+.swiper-container1.swiper-slide h3 {
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.swiper-container1 .swiper-slide p {
+    font-size: 0.9rem;
+    padding: 5px;
+}
+
+/* @media(min-width:639px) {
+    .swiper-container1 .ContentHolder {
+        border-top-right-radius: 50px !important;
+        right: 0;
+    }
+
+} */
+
+@media (max-width:638px) {
+    .swiper-container1 {
+        width: 100%;
+    }
+}
+
+@media (max-width:500px) {
+    .swiper-container1 {
+        width: 70vw;
+    }
+}
+
+@media (max-width:300px) {
+    .swiper-container1 {
+        width: 100%;
+    }
+
+    .swiper-container1.swiper-slide {
+        border-radius: 0px;
+    }
+
+    .swiper-container1 .ImgHolder {
+        border-radius: 0px;
+    }
+
+    .swiper-container1 .ContentHolder {
+        border-radius: 50px;
+    }
 }
